@@ -20,6 +20,9 @@ class TodoForm extends React.Component {
         if (this.state.newTaskName) {
             this.props.addNewTask(this.state.newTaskName);
         }
+        this.setState({
+            newTaskName:""
+        });
     };
 
     render(){
