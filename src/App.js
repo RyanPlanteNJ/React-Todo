@@ -50,6 +50,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+          <button className="clear-btn" onClick={this.clearCompleted}>
+                Clear Completed Tasks
+          </button>
         <div className="header">
           <TodoForm addNewTask={this.addNewTask} />
           <h2>Tasks to Complete</h2>
@@ -57,9 +60,8 @@ class App extends React.Component {
           <TodoList 
             toggleTaskCompleted={this.toggleTaskCompleted}
             tasks={this.state.tasks}
-            clearCompleted={this.clearCompleted}
           />
-        </div>
+     </div>
     );
   }
 }

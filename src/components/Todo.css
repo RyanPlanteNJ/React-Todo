@@ -58,6 +58,7 @@ h1 {
   }
 
   .task.completed{
+      padding-bottom: 3px;
       background-color: #b397e1;
       text-decoration: line-through;
 
@@ -81,4 +82,5 @@ button {
     color: white;
     font-size: 16px;
     padding: 6px 14px;
+    margin-bottom: 10px;
 }
